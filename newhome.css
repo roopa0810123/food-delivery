@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0;padding:0; 
+  box-sizing:border-box;
+  outline:none;border:none;
+  text-decoration:none;
+  text-transform:capitalize;
+  transition:all .2s linear;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    scroll-padding-top:6rem;
+}
+body{
+    background-color:black;   
+}
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align:center;
+    font-size:3.5rem;
+    padding:1rem;
+    color:#f4a950;
+}
+.home .btn{
+    display:inline-block;
+    padding:1rem 2rem;
+    border:.2rem solid black;
+    color:black;
+    cursor:pointer;
+    font-size:2rem;
+    border-radius:7px;
+    position:relative;
+    overflow:hidden;
+    margin-top:1rem;
+    background-color:#f4a950;
+}
+
+.home .btn:hover{
+    transform:scale(1.08);
+    font-weight:bold;
+
+}
+header{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:black;
+    padding:2rem 9%;
+    box-shadow:0 .5rem 1rem rgba(255,255,255,0.2);
+}
+header .logo{
+   font-size:3rem;
+   font-weight:bold;
+   color:#f4a950; 
+}
+header .logo i{
+    padding-right:1rem;
+    color:#f4a950;
+}
+header .navbar a{
+    font-size:2.5rem;
+    margin-left:2.5rem;
+    color:#fff;
+}
+header .navbar a:hover{
+    color:#f4a950;
+}
+#menu-bar{
+    font-size:3rem;
+    cursor:pointer;
+    color: #f4a950;
+    border:.1rem solid;
+    border-radius:.3rem;
+    padding:.5rem 1rem;
+    display:none;
+}
+.home{
+    margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:25rem;
+    min-height:100vh;
+    align-items:center;
+
+}
+.home .content{
+    flex:1 1 40rem;
+    margin-top:5rem;
+}
+.home .image{
+    flex:1 1 40rem;
+}
+.home .image img{
+    width:80%;
+}
+.home .content h1{
+  font-size:4rem;
+  color:#f4a950;  
+}
+.home .content p{
+    font-size:1.7rem;
+    color:white;  
+  }
+.about{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color:black;
+    min-height:100vh;
+
+} 
+.about h1{
+    font-size:4rem;
+    color:#f4a950;
+    margin-top:3rem;
+    margin-bottom:1rem;
+    text-transform:capitalize;
+}
+.about h2{
+    font-size:3rem;
+    color:white;
+    margin-bottom:2rem;
+    text-transform:capitalize;
+}
+.about .box-container{
+    background-color:white;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    border-radius:10px;
+    border-top:8px solid #f4a950;
+    padding:20px;
+    gap:2rem;
+}
+.about .image{
+    width:250px;
+    height:250px;
+    overflow:hidden;
+    border-radius:0.5rem;
+}
+.about .image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center;
+}
+.about .box{
+    position:relative;
+    display:flex;
+    flex:1 1 17rem;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+.about .box h3{
+  font-size:2rem;
+  color:black;
+}
+.about .image img:hover{
+    transform:scale(1.08);
+    transition:0.5s;
+}
+.menu{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color:black;
+    min-height:100vh;
+} 
+.menu h1{
+    font-size:4rem;
+    color:#f4a950;
+    margin-top:3rem;
+    margin-bottom:1rem;
+    text-transform:capitalize;
+}
+.menu h2{
+    font-size:3rem;
+    color:white;
+    margin-bottom:2rem;
+    text-transform:capitalize;
+}
+.menu .box-container{
+    background-color:white;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    border-radius:10px;
+    border-top:8px solid #f4a950;
+    padding:20px;
+    gap:2rem;
+}
+.menu .box{
+    position:relative;
+    display:flex;
+    flex:1 1 17rem;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+
+}
+.menu .image{
+    width:250px;
+    height:250px;
+    border-radius:0.5rem;
+    overflow:hidden;
+}
+.menu .image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center;;
+}
+.menu .image img:hover{
+    transform:scale(1.08);
+    transition:0.5s;
+}
+.menu .box h3{
+    font-size:2rem;
+    font-weight:500;
+    color:black;
+    padding:10px;
+    text-align:center;
+}
+.menu .box button{
+     background-color:#f4a950;
+     color:black;
+     border-radius:3px;
+     border:1px solid black;
+     right:50%;
+     margin-bottom:15px;
+     padding:4px 10px;
+     font-size:2rem;
+}
+.menu .box button:hover{
+    font-weight:bold;
+    transform:scale(1.04);
+}
+.contact h2{
+    color:#f4a950;
+    font-size:4rem;
+    text-align: center;
+    margin-bottom:4rem;
+}
+.contact .box-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    column-gap:5rem;
+}
+.contact .box-container.contact-info{
+    flex:1 1 20rem;   
+}
+.contact .contact-form{
+    flex:1 1 20rem;
+    display:flex;
+    justify-content:center;
+}
+.contact .box-container .contact-info h2{
+    text-align:left;
+    font-size:3rem;
+    color:#f4a950;
+}
+.contact .box-container .contact-info p{
+    color:white;
+    font-size:2rem;
+    margin:1rem;
+}
+.contact .address{
+    display:flex;
+    flex-direction:column;
+}
+.contact .box-container .contact-info .address i{
+  display:flex;
+  align-items:center;
+  margin-bottom:0.5rem;
+  font-size:20px;
+  color:white;
+}
+.contact .address span{
+    font-size:1.5rem;
+    gap:1rem;
+    color:white;
+    margin:1rem;
+}
+.contact .social{
+    margin-top:1rem;
+}
+.contact .social a{
+    font-size:24px;
+    color:#f4a950;
+    margin-right:1.5rem;
+}
+.contact .social a:hover{
+    color:white;
+}
+.contact .box-container .contact-form form{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+}
+.contact .box-container .contact-form form input,textarea{
+    width:100%;
+    padding:15px;
+    border-radius: 0.5rem;
+    outline:none;
+    margin-bottom:2rem;
+    border:2px solid #f4a950;
+    box-shadow: 0 4px 4px 2px rgba(0,0,0,.5);
+}
+.contact .contact-form form input::placeholder,
+ textarea::placeholder{
+    color:black;   
+ }
+ .contact .contact-form form textarea{
+        resize:none;
+        height:150px;
+ }
+ .contact .contact-form form .btn{
+    max-width:100px;
+    background-color:#f4a950;
+    font-size:1.7rem;
+    color:black;
+    font-weight:bold;
+    border:none;
+    margin:0 auto;
+ }
+ .contact .contact-form form .btn:hover{
+    transform: scale(1.04);;
+ }
+.copyright p{
+    font-size:1.7rem;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+.copyright h1{
+    font-size:1.5rem;
+    color:white;
+    text-align:center;
+}
+@media (max-width:1350px)
+{   
+    .home{
+        column-gap:5rem;
+    }
+    .home .image{
+        text-align:center;
+    }
+    .about .image{
+        width:320px;
+        height:300px;
+    }
+    .menu .image{
+        width:320px;
+        height:300px;
+    }
+}
+@media(max-width:1050px)
+{
+    html{
+        font-size:58%;
+    }
+}
+@media(max-width:1024px)
+{
+    html{
+        font-size:55%;
+    }
+    section{
+        padding:3rem;
+    }
+    .home .image{
+        text-align:center;
+    }
+   .home .image img{
+       width:70%;
+
+   }
+}
+
+
+ @media(max-width:991px){
+    header{
+        padding:2rem;
+    }
+    .contact .box-container{
+        gap:2rem;
+        padding:2rem;
+    }
+    .about .image{
+        width:300px;
+        height:300px;
+    }
+    .menu .image{
+        width:300px;
+        height:300px;
+    }
+    .contact .box-container .contact-form form{
+        width:90%;
+    }
+
+}
+@media(max-width:871px)
+{
+    .home .image img{
+        width: 60%;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display:initial;
+    }
+    header .navbar{
+        position:absolute;
+        top:100%;left:0;right:0;
+        background:black;
+        border-top:.1rem solid rgba(255,255,255,0.1); 
+        clip-path:polygon(0 0,100% 0,100% 0, 0 0);  
+    }
+    header .navbar.active{
+        clip-path:polygon(0 0,100% 0,100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin:1rem;
+        padding:1.5rem;
+        display: block;
+        border:.2rem solid rgba(255,255,255,.1);
+        border-left:.5rem solid white;;
+        background-color:#f4a950;
+        color:black;
+        font-weight:bold;
+    }
+    .home .content h1{
+        font-size:3.5rem;
+        margin-bottom:2rem;
+    }
+    .home .content p{
+        margin-bottom:2rem;
+    }
+    .about .image{
+        width:250px;
+        height:250px;
+    }
+    .menu .image{
+        width:250px;
+        height:250px;
+    }
+    .menu .image img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position: center;;
+    }
+    .menu .box h3{
+        font-size:3rem;
+    }
+    .contact .box-container{
+        padding:.5rem;
+        column-gap:.5rem;
+        row-gap:1.5rem;
+    }
+    .contact .box-container .contact-form form{
+        width:90%;
+    }
+
+}
+@media (max-width:700px)
+{
+    .contact .box-container {
+        gap:2rem;
+        padding:2rem;
+    }
+    .contact .box-container .contact-form form{
+        width:75%;
+        display:flex;
+        flex-direction:column;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size:50%;
+    }
+    .home .content h1{
+        font-size:3rem;
+    }
+    .home .image img{
+        width:90%;
+    }
+    .menu .image{
+        width:250px;
+        height:300px;
+        border-radius:0.5rem;
+        overflow:hidden;
+    }
+    .menu .box h3{
+        font-size:3rem;
+    }
+    .about .box h3{
+        font-size:3rem;
+    }
+    .about .image{
+        width:250px;
+        height:300px;
+        border-radius:0.5rem;
+        overflow:hidden;
+    }
+    .contact .box-container{
+        padding:1rem;
+        gap:2rem;
+    }
+    .contact .box-container .contact-form form{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+   
+}
+@media(max-width:320px){
+    .about .image{
+        width:200px;
+        height:200px;
+    }
+    .menu .image{
+        width:200px;
+        height:200px;
+    }
+}

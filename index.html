@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD DELIVERY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="newhome.css">
+    <script>
+        function nonveg()
+        {
+           window.location.href="nonveg.html";
+        }
+        function veg()
+        {
+            window.location.href="veg.html";
+        }
+        function desserts()
+        {
+           window.location.href="desserts.html";
+        }
+        function beverages()
+        {
+            window.location.href="beverages.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>FOODIE</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact Us</a>
+            <a href="signin.html">Login</a>
+            <a href="signup.html">Sign up</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h1>ENJOY!!! THE TASTE OF HEAVEN...</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum molestiae aliquid nesciunt inventore, commodi ab a repellendus necessitatibus voluptatibus perferendis optio pariatur dolorem minima similique. Autem nobis repellat laborum unde.</Label></p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+            <img src="home.png">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1>About</h1>
+        <h2>What We Offer</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                   <img src="image1.png">
+                </div>
+                <h3>Quality Food</h3>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image2.jpg">
+                </div>
+                <h3>Catering</h3>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image3.png">
+                </div>   
+                <h3>Free Delivery</h3> 
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image4.png">
+                </div>   
+                <h3>24/7 Service</h3> 
+            </div>
+        </div>
+        
+    </section>
+    <section class="menu" id="menu">
+            <h1>Our Menu</h1>
+            <h2>Explore Our Food</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="non_veg.png">
+                </div>
+                <h3>Non-Vegetarian</h3>
+                <button onclick="nonveg()">Check Now</button>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="veg.png">
+                </div>
+                <h3>Vegetarian</h3>
+                <button onclick="veg()">Check Now</button>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="desserts.png">
+                </div>
+                <h3>Desserts</h3>
+                <button onclick="desserts()">Check Now</button>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="beverages.png">
+                </div>
+                <h3>Beverages</h3>
+                <button onclick="beverages()">Check Now</button>
+            </div>
+        </div>
+    </section>
+ <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+    <div class="box-container">
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="address">
+                <i class="fa fa-location-dot"><span> 30 Street VSP,IND 53001</span></i>
+                <i class="fa fa-phone"><span>+9 900 103 5001</span></i>
+                <i class="fa fa-envelope"><span>contact@foodie.com</span></i>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Name*">
+                <input type="email" name="" id="" placeholder="Email*">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter your Message*"></textarea>
+                <input type="button" value="Submit" class="btn">
+            </form>
+        </div>
+    </div>
+
+ </section>
+ <section>
+    <div class="copyright">
+        <p>&#169; All Rights Reserved</p>
+        <h1>Team Web Designing</h1>
+    </div>
+        
+ </section>
+ 
+
+ <script src="newhome.js"></script>
+</body>
+</html>
